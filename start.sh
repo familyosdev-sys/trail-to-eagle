@@ -1,6 +1,6 @@
 #!/bin/bash
-# ScoutTrail PWA Launcher
-# Serves ScoutTrail over HTTPS so iPhone can "Add to Home Screen"
+# Trail to Eagle PWA Launcher
+# Serves Trail to Eagle over HTTPS so iPhone can "Add to Home Screen"
 #
 # HOW TO USE (Hunter's iPhone):
 # 1. On the computer, run: ./start.sh
@@ -8,7 +8,7 @@
 # 3. Tap "Continue" on the certificate warning (this is normal for local certs)
 # 4. Tap the Share button (square with arrow pointing up)
 # 5. Scroll down and tap "Add to Home Screen"
-# 6. Tap "Add" — ScoutTrail is now an app on your home screen!
+# 6. Tap "Add" — Trail to Eagle is now an app on your home screen!
 #
 # The app works offline once installed. No internet needed after that.
 
@@ -27,7 +27,7 @@ fi
 
 echo ""
 echo "══════════════════════════════════════════════"
-echo "  ScoutTrail PWA Server"
+echo "  Trail to Eagle PWA Server"
 echo "  https://192.168.1.101:8888"
 echo "══════════════════════════════════════════════"
 echo ""

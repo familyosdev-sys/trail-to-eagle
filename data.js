@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════════════════════
-// ScoutTrail — BSA Advancement Data
+// Trail to Eagle — BSA Advancement Data
 // Sources: scouting.org, 2025/2026 BSA Requirements, Guide to Advancement
 // Updated: June 2026 — Citizenship in Society discontinued Feb 27, 2026
 // Eagle-required count reduced from 14 to 13

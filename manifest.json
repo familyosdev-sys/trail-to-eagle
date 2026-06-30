@@ -1,6 +1,6 @@
 {
-    "name": "ScoutTrail",
-    "short_name": "ScoutTrail",
+    "name": "Trail to Eagle",
+    "short_name": "Trail to Eagle",
     "description": "Your Boy Scout quest tracker — every rank, every merit badge, every step of the trail.",
     "start_url": "./index.html",
     "display": "standalone",

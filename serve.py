@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""HTTPS server for ScoutTrail PWA with self-signed cert for local network."""
+"""HTTPS server for Trail to Eagle PWA with self-signed cert for local network."""
 
 import http.server
 import ssl
@@ -28,7 +28,7 @@ def generate_cert():
     print(f"Created {CERT_FILE} and {KEY_FILE}")
 
 class PWAHandler(http.server.SimpleHTTPRequestHandler):
-    """Serve ScoutTrail with correct headers for PWA/iOS."""
+    """Serve Trail to Eagle with correct headers for PWA/iOS."""
     
     def end_headers(self):
         # PWA-critical headers
@@ -71,7 +71,7 @@ def main():
     generate_cert()
     
     print(f"\n{'='*50}")
-    print(f"  ScoutTrail PWA Server")
+    print(f"  Trail to Eagle PWA Server")
     print(f"  HTTPS: https://192.168.1.101:{PORT}")
     print(f"  Local: https://localhost:{PORT}")
     print(f"{'='*50}")

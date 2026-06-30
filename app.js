@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════════════════════
-// ScoutTrail — App Logic
+// Trail to Eagle — App Logic
 // "The trail is long, but every step counts."
 // ═══════════════════════════════════════════════════════════════
 
@@ -29,7 +29,7 @@ const app = {
   // ─── PERSISTENCE ───
   loadState() {
     try {
-      const saved = localStorage.getItem('scouttrail-state');
+      const saved = localStorage.getItem('road-to-eagle-state');
       if (saved) {
         const parsed = JSON.parse(saved);
         this.state = { ...this.state, ...parsed };
@@ -41,7 +41,7 @@ const app = {
 
   saveState() {
     try {
-      localStorage.setItem('scouttrail-state', JSON.stringify(this.state));
+      localStorage.setItem('road-to-eagle-state', JSON.stringify(this.state));
     } catch(e) {
       console.warn('Could not save state:', e);
     }
@@ -718,9 +718,9 @@ const app = {
         </div>
       </div>
       <div style="margin-top:24px;padding:16px;background:var(--bsa-card);border:1px solid var(--bsa-border);border-radius:10px;">
-        <div style="font-size:0.85rem;color:var(--bsa-text-muted);margin-bottom:8px;">About ScoutTrail</div>
+        <div style="font-size:0.85rem;color:var(--bsa-text-muted);margin-bottom:8px;">About Trail to Eagle</div>
         <div style="font-size:0.9rem;line-height:1.5;">
-          ScoutTrail helps you track your progress on the trail to Eagle. 
+          Trail to Eagle helps you track your progress on the trail to Eagle. 
           All data is stored locally on your device — no accounts, no servers, no tracking.
         </div>
         <div style="font-size:0.75rem;color:var(--bsa-text-muted);margin-top:8px;">
@@ -747,7 +747,7 @@ const app = {
   resetConfirm() {
     if (confirm('Are you sure? This will erase ALL your progress. This cannot be undone!')) {
       if (confirm('Really? All your checkmarks, notes, badges — gone forever. Last chance.')) {
-        localStorage.removeItem('scouttrail-state');
+        localStorage.removeItem('road-to-eagle-state');
         this.state = {
           scoutName: '',
           currentRank: 'scout',
@@ -770,7 +770,7 @@ const app = {
   registerSW() {
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('./sw.js').then(() => {
-        console.log('ScoutTrail Service Worker registered — works offline!');
+        console.log('Trail to Eagle Service Worker registered — works offline!');
       }).catch(err => {
         console.warn('SW registration failed:', err);
       });
