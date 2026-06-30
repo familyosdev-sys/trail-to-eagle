@@ -769,7 +769,7 @@ const app = {
   // ─── SERVICE WORKER ───
   registerSW() {
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js').then(() => {
+      navigator.serviceWorker.register('./sw.js').then(() => {
         console.log('ScoutTrail Service Worker registered — works offline!');
       }).catch(err => {
         console.warn('SW registration failed:', err);
